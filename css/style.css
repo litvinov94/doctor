@@ -1,0 +1,23 @@
+/* Import files */
+
+@import url('./fonts.css');
+@import url('./reset.css');
+
+/* Variables */
+
+:root {
+    --font-family: "Stem", sans-serif;
+    --second-family: "Gilroy", sans-serif;
+
+    --main-background: #fff;
+    --second-background: #00BDF8;
+
+    --main-color: #000;
+    --title-color: #00BDF8;
+}
+
+/* Main style */
+
+body {
+    
+}
