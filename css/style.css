@@ -22,6 +22,10 @@
 
 /* Main style */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--font-family);
     font-size: 24px;
@@ -78,6 +82,10 @@ body {
 
     line-height: 133%;
     text-align: right;
+}
+
+.header__navigation-list li > a:hover {
+    border-bottom: 4px solid rgba(26, 35, 110, 0.5);
 }
 
 .header__navigation-list > li > .header__navigation-list-item {
