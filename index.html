@@ -13,6 +13,7 @@
     <link rel="manifest" href="./img/favicon/site.webmanifest" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
 </head>
 <body>
     <header class="header">
@@ -71,23 +72,23 @@
                     <div class="commands__galary-list">
                         <div class="commands__galary-list-item">
                             <img src="./img/commands/item1.jpg" alt="" class="commands__galary-list-item1--img">
-                            <p class="commands__galary-list-item--name">Имя Фамилия</p>
-                            <p class="commands__galary-list-item--deskr">Описание</p>
+                            <p class="commands__galary-list-item--name">Сергеева Наталья</p>
+                            <!-- <p class="commands__galary-list-item--deskr">Описание</p> -->
                         </div>
                         <div class="commands__galary-list-item">
                             <img src="./img/commands/item2.jpg" alt="" class="commands__galary-list-item1--img">
-                            <p class="commands__galary-list-item--name">Имя Фамилия</p>
-                            <p class="commands__galary-list-item--deskr">Описание</p>
+                            <p class="commands__galary-list-item--name">Виктория Новикова</p>
+                            <!-- <p class="commands__galary-list-item--deskr">Описание</p> -->
                         </div>
                         <div class="commands__galary-list-item">
                             <img src="./img/commands/item3.jpg" alt="" class="commands__galary-list-item1--img">
-                            <p class="commands__galary-list-item--name">Имя Фамилия</p>
-                            <p class="commands__galary-list-item--deskr">Описание</p>
+                            <p class="commands__galary-list-item--name">Роман Гардинов</p>
+                            <!-- <p class="commands__galary-list-item--deskr">Описание</p> -->
                         </div>
                         <div class="commands__galary-list-item">
                             <img src="./img/commands/item4.jpg" alt="" class="commands__galary-list-item1--img">
-                            <p class="commands__galary-list-item--name">Имя Фамилия</p>
-                            <p class="commands__galary-list-item--deskr">Описание</p>
+                            <p class="commands__galary-list-item--name">Александр Щитков</p>
+                            <!-- <p class="commands__galary-list-item--deskr">Описание</p> -->
                         </div>
                     </div>
                 </div>
@@ -102,7 +103,9 @@
                         <h2 class="about__text-title">О стоматологии</h2>
                         <p class="about__text-desk">В стоматологии Стом-Ос понимают, насколько для Вас важны зубы – ведь это не только здоровье, но и красота, которая даёт уверенность в своих силах.</p>
                         <p class="about__text-desk">Далеко не каждого врача можно допустить внутрь своего организма делать сложнейшие манипуляции и получить непредсказуемый результат. Стоматологи-имплантологи уверены в своих силах, что всё сделают Вам идеально, именно поэтому дают 110% гарантию результата на свою работу. Гарантия на имплантацию действует 50 лет.</p>
-                        <button class="about__btn">Подробнее</button>
+                        <a href="#popup__about">
+                            <button class="about__btn">Подробнее</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -116,22 +119,22 @@
                 </div>
                 <div class="advantages__card">
                     <div class="advantages__card-item">
-                        <img src="./img/icon/discound.svg" alt="">
+                        <i class="fa fa-handshake-o" aria-hidden="true"></i>
                         <p class="advantages__card-item-title">Консультация</p>
                         <p class="advantages__card-item-deskr">Бесплатная первая консультация специалиста</p>
                     </div>
                     <div class="advantages__card-item">
-                        <img src="./img/icon/discound.svg" alt="">
+                        <i class="fa fa-child" aria-hidden="true"></i>
                         <p class="advantages__card-item-title">Осмотр</p>
                         <p class="advantages__card-item-deskr">Тщательный осмотр и расчет лечения</p>
                     </div>
                     <div class="advantages__card-item">
-                        <img src="./img/icon/discound.svg" alt="">
+                        <i class="fa fa-check-square" aria-hidden="true"></i>
                         <p class="advantages__card-item-title">Гарантия</p>
                         <p class="advantages__card-item-deskr">Пожизненная гарантия от производителя</p>
                     </div>
                     <div class="advantages__card-item">
-                        <img src="./img/icon/discound.svg" alt="">
+                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
                         <p class="advantages__card-item-title">Не больно</p>
                         <p class="advantages__card-item-deskr">Безболезненное проведение процедуры имплантации</p>
                     </div>
@@ -343,6 +346,24 @@
                             <button type="button" class="header__popup-form-btn">Оставить заявку</button>
                         </div>
                     </form>
+                </div>
+                <div class="popup__close">
+                    <a href="#" class="close__popap">X</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup__about">
+        <div class="popup__container">
+            <div class="popup__body">
+                <div class="popup__header-text">
+                    <h2 class="header-text--title">О нас</h2>
+                    <p>
+                        Мы инвестируем в лучшее мировое оборудование и материалы, чтобы обеспечить высочайшую точность и предсказуемость любого вмешательства. Но наша главная ценность — это ваше доверие. Поэтому мы не просто обещаем, а гарантируем свою работу на decades вперед, предоставляя официальные гарантийные документы.
+
+Наша философия проста: мы относимся к вашим зубам так же бережно, как к своим собственным. Доверяя нам, вы выбираете не просто услугу, а долгосрочные инвестиции в свое здоровье, красоту и уверенность в завтрашнем дне.
+                    </p>
                 </div>
                 <div class="popup__close">
                     <a href="#" class="close__popap">X</a>
