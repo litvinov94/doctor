@@ -446,6 +446,14 @@ body {
 
     line-height: 133%;
     color: var(--white-color);
+
+    transition: 0.5s ease-in;
+}
+
+.about__btn:hover {
+    background-color: #048bb4;
+    transition: 0.5s ease-in;
+    border-radius: 12px 0 12px 0;
 }
 
 /* block advantages */
@@ -854,28 +862,92 @@ body {
     color: var(--white-color);
  }
 
-.form__radio-element {
+/* .form__radio-element {
     display: flex;
     align-items: center;
-}
+} */
 
  .form__radio-element span {
-    margin-left: 16px;
+    /* margin-left: 16px;
 
     display: flex;
-    align-items: center;
+    align-items: center; */
 
     font-family: var(--font-family1);
     font-size: 18px;
 
     line-height: 133%;
     color: var(--white-color);
+
+    vertical-align: middle;
  }
 
- .form__radio-element input {
+ .custom_radio {
+    display: inline-block;
     width: 24px;
     height: 24px;
+
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+
+    position: relative;
  }
+
+.custom_radio::before {
+    content: '';
+
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+
+    background-color: var(--second-background);
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    display: none;
+}
+
+.custom_radio::after {
+    content: '';
+
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+
+    background-color: var(--main-background);
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    display: none;
+}
+
+.original__radio:checked + .custom_radio::before, .original__radio:checked + .custom_radio::after {
+    display: block;
+}
+
+.original__radio {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+label {
+    vertical-align: text-top;
+    cursor: pointer;
+}
 
  .form__btn {
     margin-top: 24px;
@@ -890,7 +962,14 @@ body {
     line-height: 133%;
     text-align: center;
     color: var(--white-color);
+
+    transition: 0.5s ease-in;
  }
+
+  .form__btn:hover {
+    background-color: #026988;
+    transition: 0.5s ease-in;
+  }
 
  .form__sup {
     max-width: 540px;
@@ -938,9 +1017,16 @@ body {
 
     position: relative;
     
-
     background-color: var(--second-background);
     border-radius: 100%;
+
+    transition: 0.5s ease-in;
+ }
+
+  .footer__social-icon-facebook:hover, .footer__social-icon-instagram:hover,
+ .footer__social-icon-twiter:hover, .footer__social-icon-vk:hover {
+    background-color: #026988;
+    transition: 0.5s ease-in;
  }
 
   .footer__social-icon-facebook img, .footer__social-icon-instagram img ,
