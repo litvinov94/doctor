@@ -54,6 +54,9 @@ body {
     padding: 28px 0;
 
     background-color: var(--white-color);
+
+    position: relative;
+    z-index: 2;
 }
 
 .header__logo {
@@ -134,7 +137,7 @@ body {
 
 .hero {
     position: relative;
-    z-index: -1;
+    z-index: 1;
 
     width: 100%;
     height: 100vh;
@@ -951,4 +954,138 @@ body {
     line-height: 133%;
     color: rgba(0, 0, 0, 0.6);
     text-align: center;
+ }
+
+ /* popup */
+
+ .popup {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    background-color: rgba(0, 0, 0, 0.8);
+
+    opacity: 0;
+    visibility: hidden;
+ }
+
+  .popup:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+ .popup__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+ }
+
+ .popup__body {
+    position: relative;
+
+    width: 550px;
+    height: 400px;
+    padding: 15px;
+
+    background-color: var(--white-color);
+    border-radius: 6px;
+ }
+
+ .popup__header-text .header-text--title {
+    padding-bottom: 16px;
+
+    font-family: var(--font-family1);
+    font-size: 48px;
+    
+    line-height: 108%;
+    text-align: center;
+    color: var(--title-color);
+ }
+
+  .popup__header-text .header-text--suptitle {
+    font-family: var(--font-family1);
+    font-size: 18px;
+    
+    line-height: 133%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+ }
+
+.header__popup-form > form {
+    padding-top: 20px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+ .form__name, .form__tel {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+ }
+
+ .form__name input, .form__tel input {
+    padding-left: 20px;
+
+    width: 300px;
+    height: 56px;
+
+    background-color: var(--second-background);
+    border-radius: 6px;
+
+    font-family: var(--font-family1);
+    font-size: 18px;
+
+    line-height: 133%;
+    color: var(--white-color);
+ }
+
+ .form__name input::placeholder, .form__tel input::placeholder {
+    font-family: var(--font-family1);
+    font-size: 18px;
+
+    line-height: 133%;
+    color: var(--white-color);
+ }
+
+ .popup__btn {
+    display: flex;
+    justify-content: center;
+ }
+
+ .header__popup-form-btn {
+    width: 300px;
+    height: 56px;
+
+    background-color: #026988;
+    border-radius: 6px;
+
+    font-family: var(--font-family);
+    font-size: 18px;
+    line-height: 133%;
+    text-align: center;
+    color: #fff;
+ }
+
+ .popup__close {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+
+    cursor: pointer;
+ }
+
+ .close__popap {
+    color: rgba(0, 0, 0, 0.7);
  }

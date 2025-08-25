@@ -32,7 +32,7 @@
                     <p class="header__action-text">Cлужба продаж</p>
                     <a href="tel:+74951234567" class="header__action-phone">+7 495 123-45-67</a>
                 </div>
-                <button type="button" class="header__btn">Заказать звонок</button>
+                <a href="#popup"><button type="button" class="header__btn">Заказать звонок</button></a>
             </div> 
         </div>
     </header>
@@ -45,8 +45,12 @@
                     <p class="hero__text-deskription">Мы работаем с материалами ведущих мировых производителей
                     и предоставляем 100% гарантию</p>
                     <div class="hero__wrapper-btn">
-                        <button type="button" class="hero__btn--blue">Записаться на лечение</button>
-                        <button type="button" class="hero__btn--white">О стоматологии</button>
+                        <a href="#popup">
+                            <button type="button" class="hero__btn--blue">Записаться на лечение</button>
+                        </a>
+                        <a href="#about">
+                            <button type="button" class="hero__btn--white">О стоматологии</button>
+                        </a>
                     </div>
                     <p class="hero__text-suptitle">Оставьте заявку прямо сейчас и получите в подарок бесплатную диагностику состояния ваших зубов</p>
                 </div>
@@ -318,6 +322,35 @@
         </div>
         
     </footer>
+
+    <div class="popup" id="popup">
+        <div class="popup__container">
+            <div class="popup__body">
+                <div class="popup__header-text">
+                    <h2 class="header-text--title">Запишитесь
+                    на лечение</h2>
+                    <p class="header-text--suptitle">Вы можете легко и просто записаться на лечение</p>
+                </div>
+                <div class="header__popup-form">
+                    <form action="" method="">
+                        <div class="form__name">
+                            <input type="text" placeholder="Ваша имя">
+                        </div>
+                        <div class="form__tel">
+                            <input type="tel" placeholder="+7 (000) 000-0000">
+                        </div>
+                        <div class="popup__btn">
+                            <button type="button" class="header__popup-form-btn">Оставить заявку</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="popup__close">
+                    <a href="#" class="close__popap">X</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
