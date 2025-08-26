@@ -704,7 +704,7 @@ body {
     width: 540px;
     height: 409px;
 
-    /* background-color: red; */
+    background-color: var(--main-background);
     border-radius: 16px;
 
     display: flex;
