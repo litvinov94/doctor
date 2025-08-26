@@ -1284,3 +1284,25 @@ label {
     line-height: 133%;
     text-align: center;
  }
+
+ .cercle__arrow-top {
+    width: 60px;
+    height: 60px;
+
+    background-color: var(--second-background);
+    border-radius: 50%;
+
+    position: fixed;
+    right: 60px;
+    bottom: 60px;
+ }
+
+  .cercle__arrow-top i {
+    color: #fff;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
